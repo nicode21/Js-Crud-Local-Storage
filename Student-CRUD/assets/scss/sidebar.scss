@@ -1,0 +1,127 @@
+body {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.all-body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.body {
+  height: 100%;
+  display: flex;
+}
+
+.right-part {
+  position: relative;
+  height: 100%;
+}
+
+.right-bar {
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px 0px 0px;
+}
+
+.right-bar i {
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+}
+
+.bar-body {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px 0px 18px;
+  background-color: rgb(216, 216, 216);
+  height: 100%;
+  /* right: -100%; */
+  transform: translateX(100%);
+  transition: all 0.4s;
+}
+
+.bar-body i {
+  color: black;
+  font-size: 42px;
+  cursor: pointer;
+  align-self: start;
+}
+
+.bar-body ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bar-body ul li {
+  list-style: none;
+}
+
+.bar-body ul li a {
+  color: rgb(82, 79, 62);
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: .5rem;
+  transition: all 0.4s;
+}
+
+.bar-body ul li a:hover {
+  color: white;
+}
+
+.bottom-part {
+  height: 15%;
+  /* transform: translateY(70px); */
+}
+
+.bottom-part .bottom-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+  transform: translateY(-40px);
+}
+
+.bottom-part .bottom-bar .icon i {
+  color: rgb(74, 74, 74);
+  font-size: 40px;
+  background-color: rgb(212, 212, 212);
+  transform: translateY(10px);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+}
+
+.bottom-part .bottom-bar ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: rgb(212, 212, 212);
+  gap: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 15px;
+
+}
+
+.bottom-part .bottom-bar ul li {
+  list-style: none;
+  color: rgb(74, 74, 74);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bottom-part .bottom-bar ul li:hover {
+  color: white;
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.all-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(147, 251, 236);
+}
+
+
+.body {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.body .buts {
+  display: none;
+}
+
+.body .slider {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.body .slider-box {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  position: relative;
+  box-shadow: 0px 0px 50px 10px rgb(253, 253, 253), 0px 0px 50px 10px white, 0px 0px 150px 10px rgb(255, 164, 164), 0px 0px 100px 100px rgb(218, 139, 255), 0px 0px 200px 200px rgb(27, 250, 105), 0px 0px 300px 300px rgb(149, 0, 255);
+  ;
+}
+
+.body .slider-box i {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  top: 0;
+  align-items: center;
+  z-index: 2 !important;
+  cursor: pointer;
+  height: 100%;
+  width: 8%;
+  justify-content: center;
+}
+
+.body .slider-box i:hover {
+  background-color: rgba(251, 251, 251, 0.034);
+}
+
+.body .slider-box .right {
+  right: 0;
+}
+
+.body .slider-box .left {
+  left: 0;
+  color: white;
+  transform: rotate(180deg);
+}
+
+.body .slider-box .tabs {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  z-index: 1;
+  gap: 3%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.body .slider-box .show {
+  position: absolute;
+  bottom: 10px;
+  height: 0px;
+  width: 100%;
+  z-index: 3;
+  height: 50px;
+}
+
+.body .slider-box .show:hover .tabs {
+  opacity: 1;
+}
+
+.body .slider-box .tabs .tab {
+  width: calc(100%/6);
+  background-color: rgba(255, 255, 255, 0.671);
+  height: 5px;
+  cursor: pointer;
+}
+
+.body .slider-box .tabs .tab:hover {
+  background-color: white !important;
+}
+
+.active-tab {
+  background-color: white !important;
+}
+
+.body .slider .img {
+  width: 70%;
+  height: 100%;
+  left: 15%;
+  object-fit: fill;
+  position: absolute;
+  z-index: 1;
+  /* transform: translateY(1000px); */
+  transition: all 0.8s;
+  opacity: 0;
+  flex: 0 0 auto;
+}
+
+.active {
+  opacity: 1 !important;
+  /* background-color: red; */
+}

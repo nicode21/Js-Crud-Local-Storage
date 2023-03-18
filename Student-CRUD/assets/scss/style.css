@@ -1,0 +1,305 @@
+.all-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff0051;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.all-body .body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-body .body .form-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.all-body .body .form-body input {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
+  outline: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ff0051;
+}
+
+.all-body .body .form-body input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.all-body .body .form-body .create {
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.all-body .body .form-body .create:hover {
+  color: white;
+  background-color: #ff0051;
+  border: 2px solid white;
+  -webkit-box-shadow: 0px 0px 20px 5px white, 0px 0px 30px 5px #f803f8;
+          box-shadow: 0px 0px 20px 5px white, 0px 0px 30px 5px #f803f8;
+}
+
+.all-body .body .student-list-all-body {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.all-body .body .student-list-all-body .student-body {
+  height: 50%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.all-body .body .student-list-all-body .student-list-title {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.all-body .body .student-list-all-body .list-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 82.3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-body .body .student-list-all-body .list-titles .list-title {
+  margin: 0;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+.all-body .body .student-list-all-body .list-titles .list-title:nth-child(1) {
+  width: 20%;
+  border-left: 2px solid black;
+}
+
+.all-body .body .student-list-all-body .student-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 82.3%;
+}
+
+.all-body .body .student-list-all-body .student-list .student-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 2px solid black;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+  padding: 10px;
+  border-top: 2px solid black;
+  margin: 0;
+}
+
+.all-body .body .student-list-all-body .student-list .student-data:nth-child(1) {
+  width: 20%;
+  border-left: 2px solid black;
+}
+
+.all-body .body .student-list-all-body .student-list .update {
+  position: absolute;
+  right: -8%;
+  top: 20%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.all-body .body .student-list-all-body .student-list .update:hover {
+  opacity: 0.7;
+}
+
+.all-body .body .student-list-all-body .student-list .remove {
+  position: absolute;
+  right: -15%;
+  top: 20%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.all-body .body .student-list-all-body .student-list .remove:hover {
+  opacity: 0.7;
+}
+
+.all-body .student-update {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  top: 13%;
+  left: 30%;
+  height: 60%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 7px solid black;
+  -webkit-box-shadow: inset 0px 0px 200px #ff0051;
+          box-shadow: inset 0px 0px 200px #ff0051;
+  display: none;
+}
+
+.all-body .student-update .update-form-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+}
+
+.all-body .student-update .update-form-body .exit {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  line-height: 25px;
+  top: 10px;
+  right: 30px;
+  border: 4px solid black;
+  margin: 0;
+  border-radius: 50px;
+  height: 10%;
+  width: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.all-body .student-update .update-form-body .update-title {
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.all-body .student-update .update-form-body input {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
+  outline: none;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ff0051;
+}
+
+.all-body .student-update .update-form-body input:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.all-body .student-update .update-form-body .update-create {
+  height: 50px;
+  border: none;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.all-body .student-update .update-form-body .update-create:hover {
+  color: white;
+  background-color: #ff0051;
+  border: 2px solid white;
+  -webkit-box-shadow: 0px 0px 20px 5px white, 0px 0px 30px 5px #f803f8;
+          box-shadow: 0px 0px 20px 5px white, 0px 0px 30px 5px #f803f8;
+}
+/*# sourceMappingURL=style.css.map */
